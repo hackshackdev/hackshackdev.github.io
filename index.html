@@ -3,36 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Game Development Company Website">
-    <title>Game Dev Company</title>
-    <!-- Link to CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <title>Hack Shack Studios</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        nav {
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .games {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+        .game {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 1rem;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .embed {
+            margin-top: 2rem;
+            text-align: center;
+        }
+
+        .image-section {
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #333;
+            color: white;
+            margin-top: 2rem;
+        }
+
+        a {
+            color: #0066cc;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
     <header>
+        <h1>Game Developer Portfolio</h1>
         <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Games</a></li>
-                <li><a href="#">Team</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
+            <a href="#about">About</a>
+            <a href="#games">Games</a>
+            <a href="#contact">Contact</a>
         </nav>
-        <h1>Hack Shack Studios</h1>
     </header>
 
-    <section id="main-content">
-<!--         <h2>Our Games</h2>
-<!--         <div class="game-gallery"> -->
-            <img src="images/game1.jpg" alt="">
+    <section id="about" class="container">
+        <h2>About Me</h2>
+        <p>Hi! I'm a passionate game developer with a love for creating immersive and exciting gaming experiences. Welcome to my portfolio where you can explore my latest projects and get to know more about my journey in game development.</p>
+    </section>
+
+    <section id="games" class="container">
+        <h2>My Games</h2>
+        <div class="games">
+            <div class="game">
+                <h3>Ground Zero</h3>
+                <p>A wave-based FPS inspired by CoD Zombies and Halo, where up to 8 players raid an alien planet to capture and defend "Forges". The players must fend off the alien androids and cyborg animals while hacking the forge, and using the resources (and their enemies) to their advantage.</p>
+                <a href="#">Learn More</a>
+            </div>
         </div>
-    </section> -->
+        <div class="embed">
+            <iframe frameborder="0" src="https://itch.io/embed/3198509?border_width=5&amp;bg_color=9f3fe8&amp;link_color=000000&amp;border_color=000000" width="560" height="175"><a href="https://hack-shack-studios.itch.io/ground-zero">Ground Zero by Hack Shack Studios</a></iframe>
+        </div>
+        <div class="image-section">
+            <h3>Game Snapshot</h3>
+            <img src="path/to/your-game-image.jpg" alt="Ground Zero Gameplay" style="max-width:100%; border: 1px solid #ccc; border-radius: 5px;">
+        </div>
+    </section>
+
+    <section id="logo" class="container">
+        <h2>Our Logo</h2>
+        <div class="image-section">
+            <img src="path/to/your-logo-image.png" alt="Hack Shack Studios Logo" style="max-width:200px;">
+        </div>
+    </section>
+
+    <section id="contact" class="container">
+        <h2>Contact</h2>
+        <p>If you'd like to collaborate or learn more about my work, feel free to reach out!</p>
+        <p>Email: <a href="mailto:dev@hackshack.studio">dev@hackshack.studio</a></p>
+        <p>GitHub: <a href="https://github.com/hackshackdev" target="_blank">github.com/hackshackdev</a></p>
+    </section>
 
     <footer>
-        <p>&copy; 2024 Hack Shack Studios LLC. All rights reserved.</p>
+        <p>&copy; 2024 Hack Shack Studios All rights reserved.</p>
     </footer>
-
-    <!-- Link to JavaScript -->
-    <script src="script.js"></script>
 </body>
 </html>
